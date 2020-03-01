@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import './Products.scss';
+import ProductThumbnail from './../../components/ProductThumbnail/ProductThumbnail';
+
 class Products extends Component {
   state = {
     categories: [],
@@ -27,13 +30,13 @@ class Products extends Component {
   }
 
   render() {
-    let productsJsx = this.state.products.map(product => {
-      return <h1 key={product.id}>{product.name}</h1>;
-    });
+    let productsJsx = this.state.products.map(product => (
+      <ProductThumbnail product={product} key={product.id} />
+    ));
 
     return (
       <div className="products-container">
-        <h1>Products component loaded</h1>
+        <header className="page-title">Product Listing Page</header>
         {productsJsx}
       </div>
     );
