@@ -6,7 +6,7 @@ import './ProductThumbnail.scss';
 const ProductThumbnail = props => {
   return (
     <article className="product-thumbnail-container">
-      <img src={props.product.imageUrl} alt="product image" />
+      <img src={props.product.imageUrl} alt={props.product.name} />
       <div className="product-name">{props.product.name}</div>
       <div>
         <Link to={'/product/' + props.product.id}>

@@ -48,7 +48,7 @@ class ProductDetails extends Component {
         <header className="page-title">Product Details Page</header>
         <div className="body">
           <div className="product-image-container">
-            <img src={this.state.product.imageUrl} alt="product image" />
+            <img src={this.state.product.imageUrl} alt={this.state.product.name} />
           </div>
           <div className="product-description">
             <div className="text">
