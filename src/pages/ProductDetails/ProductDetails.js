@@ -17,7 +17,7 @@ class ProductDetails extends Component {
   fetchProductById(productId) {
     if (productId) {
       axios
-        .get('http://localhost:3000/products/' + productId)
+        .get('/products/' + productId)
         .then(resp => {
           this.setState({ product: resp.data });
           this.fetchCategoryById(resp.data.categoryId);
@@ -30,7 +30,7 @@ class ProductDetails extends Component {
 
   fetchCategoryById(categoryId) {
     axios
-      .get('http://localhost:3000/categories/' + categoryId)
+      .get('/categories/' + categoryId)
       .then(resp => {
         this.setState({ categoryName: resp.data.name });
       })
