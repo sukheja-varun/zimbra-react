@@ -1,0 +1,17 @@
+.products-container {
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .category-selection {
+    margin: 0.5rem 0;
+  }
+  .product-thumbnails-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
