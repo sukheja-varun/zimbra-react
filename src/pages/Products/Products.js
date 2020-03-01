@@ -7,20 +7,20 @@ import ProductThumbnail from './../../components/ProductThumbnail/ProductThumbna
 class Products extends Component {
   state = {
     categories: [],
-    selectedCategory: null,
+    selectedCategoryId: null,
     products: []
   };
 
   async componentDidMount() {
     try {
       let categoryResp = await axios.get('http://localhost:3000/categories');
-      let selectedCategory = categoryResp.data[0];
+      let selectedCategoryId = categoryResp.data[0].id;
       let productsResp = await axios.get(
-        'http://localhost:3000/products?categoryId=' + selectedCategory.id
+        'http://localhost:3000/products?categoryId=' + selectedCategoryId
       );
       this.setState({
         categories: categoryResp.data,
-        selectedCategory,
+        selectedCategoryId,
         products: productsResp.data
       });
       console.log(this.state);
@@ -29,7 +29,21 @@ class Products extends Component {
     }
   }
 
+  categoryChangeHandler = async event => {
+    let selectedCategoryId = event.target.value;
+    let productsResp = await axios.get(
+      'http://localhost:3000/products?categoryId=' + selectedCategoryId
+    );
+    this.setState({ selectedCategoryId, products: productsResp.data });
+  };
+
   render() {
+    let optionsJsx = this.state.categories.map(category => (
+      <option value={category.id} key={category.id}>
+        {category.name}
+      </option>
+    ));
+
     let productsJsx = this.state.products.map(product => (
       <ProductThumbnail product={product} key={product.id} />
     ));
@@ -37,6 +51,10 @@ class Products extends Component {
     return (
       <div className="products-container">
         <header className="page-title">Product Listing Page</header>
+        <div className="category-selection">
+          <span>category</span>
+          <select onChange={this.categoryChangeHandler}>{optionsJsx}</select>
+        </div>
         <div className="product-thumbnails-wrapper">{productsJsx}</div>
       </div>
     );
