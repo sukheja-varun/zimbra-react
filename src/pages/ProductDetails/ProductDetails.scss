@@ -1,0 +1,31 @@
+.product-details-container {
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .body {
+    display: flex;
+  }
+  .product-image-container {
+    width: 50%;
+    img {
+      margin: auto;
+      display: block;
+    }
+  }
+  .product-description {
+    .text {
+      display: flex;
+      align-items: baseline;
+
+      h3 {
+        margin-left: 10px;
+        color: #6c757d;
+      }
+    }
+  }
+}
