@@ -15,6 +15,11 @@
   }
   .category-selection {
     margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    selection {
+      font-size: 1rem;
+    }
   }
   .product-thumbnails-wrapper {
     display: grid;
