@@ -3,14 +3,27 @@ import axios from 'axios';
 
 class Products extends Component {
   state = {
+    categories: [],
+    selectedCategory: null,
     products: []
   };
 
-  componentDidMount() {
-    axios
-      .get('http://localhost:3000/products')
-      .then(resp => this.setState({ products: resp.data }))
-      .catch(error => console.log('Unable to fetch Products', error));
+  async componentDidMount() {
+    try {
+      let categoryResp = await axios.get('http://localhost:3000/categories');
+      let selectedCategory = categoryResp.data[0];
+      let productsResp = await axios.get(
+        'http://localhost:3000/products?categoryId=' + selectedCategory.id
+      );
+      this.setState({
+        categories: categoryResp.data,
+        selectedCategory,
+        products: productsResp.data
+      });
+      console.log(this.state);
+    } catch (error) {
+      console.log('Error fetching data from server');
+    }
   }
 
   render() {
