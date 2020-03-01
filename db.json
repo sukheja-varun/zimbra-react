@@ -1,0 +1,114 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Lips"
+      },
+      {
+        "id": 2,
+        "name": "Face"
+      },
+      {
+        "id": 3,
+        "name": "Eyes"
+      },
+      {
+        "id": 4,
+        "name": "Nails"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "POSE HD Setting Powder",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/pose-hd-setting-powder-12.jpeg",
+        "description": "HD Translucent Pressed Setting Powder",
+        "categoryId": 1
+      },
+      {
+        "id": 2,
+        "name": "Twin Faced Concealer Sticks",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/twin-faced-concealer-sticks-4.jpeg",
+        "description": "Dual Edged Concealer Pencil",
+        "categoryId": 1
+      },
+      {
+        "id": 3,
+        "name": "Total Makeover FF Cream",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/total-makeover-ff-cream-6.jpeg",
+        "description": "5 in 1 Primer-Concealer-Foundation-Compact with SPF 30 & Skin Tone Corrector Palette",
+        "categoryId": 1
+      },
+      {
+        "id": 4,
+        "name": "Tinted Perfection",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/tinted-perfection-17.jpeg",
+        "description": "Base Primer & Pore Minimiser",
+        "categoryId": 1
+      },
+      {
+        "id": 5,
+        "name": "Manish Malhotra 4 in 1 Eyeshadow Palette",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/mm-4-in-1-eyeshadow-palette-3.jpeg",
+        "description": "Compact Eyeshadow Palette with 4 shades in Matte, Metallic & Foil Finishes",
+        "categoryId": 2
+      },
+      {
+        "id": 6,
+        "name": "Wheelie",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/wheelie-14.jpeg",
+        "description": "Precision Eyeliner & Stylist",
+        "categoryId": 2
+      },
+      {
+        "id": 7,
+        "name": "Manish Malhotra Liquid Matte Lipstick",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/mm-liquid-matte-lipstick-3.jpeg",
+        "description": "Long-stay Velvet Matte Lip Colour",
+        "categoryId": 3
+      },
+      {
+        "id": 8,
+        "name": "Manish Malhotra Soft Matte Lipstick",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/soft-matte-lipstick-3.jpeg",
+        "description": "Hydrating Long-wear Lipstick",
+        "categoryId": 3
+      },
+      {
+        "id": 9,
+        "name": "LIT Creamy Matte Lipstick",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/lit-creamy-matte-lipstick-4.jpeg",
+        "description": "Precision Perfect Matte Slimstick",
+        "categoryId": 3
+      },
+      {
+        "id": 10,
+        "name": "LIT Liquid Matte Lipstick",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/lit-liquid-matte-lipstick-5.jpeg",
+        "description": "Moringa Oil Enriched Matte Lipstick",
+        "categoryId": 3
+      },
+      {
+        "id": 11,
+        "name": "Perfect Curves",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/perfect-curves-14.jpeg",
+        "description": "Moisturising Matte Lipstick",
+        "categoryId": 3
+      },
+      {
+        "id": 12,
+        "name": "Wanderlust",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/wanderlust-gel-nail-polish-3.jpeg",
+        "description": "Non toxic, Long Lasting Gel nail polish colours | Made in Italy",
+        "categoryId": 4
+      },
+      {
+        "id": 13,
+        "name": "LIT Nail Enamel",
+        "imageUrl": "https://files.myglamm.com/images/category/web/medium/lit-nail-enamel-5.jpeg",
+        "description": "Chip-resistant, Glossy Nail Enamel",
+        "categoryId": 4
+      }
+    ]
+  }
+  
