@@ -52,7 +52,7 @@ class Products extends Component {
       <div className="products-container">
         <header className="page-title">Product Listing Page</header>
         <div className="category-selection">
-          <span>category</span>
+          <span>Category</span>
           <select onChange={this.categoryChangeHandler}>{optionsJsx}</select>
         </div>
         <div className="product-thumbnails-wrapper">{productsJsx}</div>
