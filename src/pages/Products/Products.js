@@ -51,13 +51,10 @@ class Products extends Component {
     return (
       <div className="products-container">
         <header className="page-title">Product Listing Page</header>
-        if(this.state.categories.length)
-        {
-          <div className="category-selection">
-            <span>Category</span>
-            <select onChange={this.categoryChangeHandler}>{optionsJsx}</select>
-          </div>
-        }
+        <div className="category-selection">
+          <span>Category</span>
+          <select onChange={this.categoryChangeHandler}>{optionsJsx}</select>
+        </div>
         <div className="product-thumbnails-wrapper">{productsJsx}</div>
       </div>
     );
