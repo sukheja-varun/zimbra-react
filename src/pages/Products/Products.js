@@ -37,7 +37,7 @@ class Products extends Component {
     return (
       <div className="products-container">
         <header className="page-title">Product Listing Page</header>
-        {productsJsx}
+        <div className="product-thumbnails-wrapper">{productsJsx}</div>
       </div>
     );
   }
