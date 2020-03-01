@@ -23,7 +23,6 @@ class Products extends Component {
         selectedCategoryId,
         products: productsResp.data
       });
-      console.log(this.state);
     } catch (error) {
       console.log('Error fetching data from server');
     }
